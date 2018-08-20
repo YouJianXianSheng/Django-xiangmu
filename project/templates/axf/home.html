@@ -76,6 +76,52 @@
             {% endfor %}
         </ol>
     </section>
+    <section class="mainInfo">
+        {% for main in mainList %}
+            <section>
+                <h3>
+                    {{main.name}}
+                    <a href="#">更多>></a>
+                    <span></span>
+                </h3>
+                <div>
+                    <a href="#">
+                        <img src="{{main.img}}"/>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{{main.img1}}"/>
+                            <span class="description">{{main.longname1}}</span>
+                            <span>{{main.price1}}</span>
+                            <s>{{main.markeprice1}}</s>
+                        </a>
+                        <button><span>&#43;</span></button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{main.img2}}"/>
+                            <span class="description">{{main.longname2}}</span>
+                            <span>{{main.price2}}</span>
+                            <s>{{main.markeprice2}}</s>
+                        </a>
+                        <button><span>&#43;</span></button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{main.img3}}"/>
+                            <span class="description">{{main.longname3}}</span>
+                            <span>{{main.price3}}</span>
+                            <s>{{main.markeprice3}}</s>
+                        </a>
+                        <button><span>&#43;</span></button>
+                    </li>
+                </ul>
+            </section>
+
+        {% endfor %}
+    </section>
 </div>
 
 {% endblock base %}
